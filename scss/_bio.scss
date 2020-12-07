@@ -1,0 +1,23 @@
+.bio-section {
+  padding: 10rem 0;
+  .featured-text {
+    padding: 2rem;
+    h1 {
+      font-size: 3.75rem;
+    }
+    .mobile-flex-column-reverse {
+      flex-direction: column-reverse;
+    }
+    @media (min-width: 992px) {
+      padding: 0 0 0 2rem;
+      border-left: 0.5rem solid $burgundy;
+      
+      h1 {
+        color:$primary;
+        position: absolute;
+        transform: translate(-30%, -80%);
+        font-size:9em;
+      }
+    }
+  }
+}

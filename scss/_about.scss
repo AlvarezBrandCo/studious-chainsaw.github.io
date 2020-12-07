@@ -1,0 +1,25 @@
+// main page ---
+.about-section {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  background: linear-gradient(
+    to bottom,
+    $primary 100%,
+    #{fade-out($primary, 0.1)} 75%,
+    #{fade-out($primary, 0.2)} 100%
+  );
+  p {
+    margin-bottom: 5rem;
+  }
+}
+// main page ---
+
+
+.about-page {
+  padding-top: 10rem;
+
+  img.main-bio {
+    width:100%;
+  }
+
+}

@@ -1,0 +1,46 @@
+* {font-family:'Futura'}
+h2, h3, h4, h5, h6, a {
+font-family: "Venti CF";
+font-weight: 300;
+}
+h1 {
+  font-size: 5.75rem;
+  font-family: "Northwell";
+  font-weight: 100;
+}
+h2 {
+  font-size: 3rem
+}
+p {
+  font-family: "Venti CF";
+  font-weight:100;
+}
+
+a.underline {
+  color:inherit!important;
+  position: relative;
+  &:after {
+    content: '';
+    background: $primary;
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top:20px;
+    transition: width .2s
+  }
+  &:hover {
+    &:after {
+      content: '';
+      background: $primary;
+      height: 3px;
+      width: 100%;
+      position: absolute;
+      left: 50%;
+      top:20px;
+      transform: translate(-50%);
+      transition: width .2s
+    }
+  }
+}

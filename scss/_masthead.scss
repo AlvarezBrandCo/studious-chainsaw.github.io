@@ -1,0 +1,74 @@
+.masthead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 10rem 0;
+  background: linear-gradient(to bottom, #{fade-out($primary, .9)} 0%,#{fade-out($primary, .8)} 85%,$primary 100%), url('../img/conyers-239-mobile.jpg');
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  .main-logo {
+    width:70%;
+    margin-bottom: 10px;
+    @media (min-width: 768px) {
+        width:350px;
+        margin-bottom: 10px;
+      }
+
+    }
+  h1 {
+    font-family: 'Venti CF';
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.8rem;
+    background: -webkit-linear-gradient(fade-out(white, 0.2), fade-out(white, .4));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding-bottom: 10px;
+  }
+  h2 {
+    max-width: 20rem;
+    font-size: 1rem;
+  }
+  @media(min-width: 768px) {
+    h1 {
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+  }
+  @media(min-width: 992px) {
+    height: 100vh;
+    padding: 0;
+    h1 {
+      font-size: 6rem;
+      line-height: 6rem;
+      letter-spacing: 0.3rem;
+    }
+    h2 {
+      max-width: 30rem;
+      font-size: 1.25rem;
+    }
+  }
+}
+
+@media(min-width: 768px) {
+  .masthead {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 12rem 0;
+    background: linear-gradient(to bottom, #{fade-out($primary, 1)} 0%,#{fade-out($primary, .6)} 65%,$primary 100%), url('../img/conyers-239-crop.jpg');
+    background-position: center 35%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+}
+iframe > * {
+  overflow:hidden!important;
+}
